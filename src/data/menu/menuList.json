@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "First App",
+    "to": "",
+    "component": "</>"
+  },
+  {
+    "id": 2,
+    "title": "Second App",
+    "to": "",
+    "component": "</>"
+  }
+]
