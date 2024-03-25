@@ -1,3 +1,3 @@
-import { menuList } from 'data/menu';
+import projectsList from './projectsList';
 
-export { menuList };
+export { projectsList };
