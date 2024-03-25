@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { useTheme } from '@mui/material/styles';
+import { Outlet } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBarWindow from './AppBarWindow';
@@ -22,7 +22,9 @@ export default function AppGlobalWindow() {
       <CssBaseline />
       <AppBarWindow open={open} handleDrawerOpen={handleDrawerOpen} />
       <DrawerWindow open={open} handleDrawerClose={handleDrawerClose} />
-      <MainWindow open={open} />
+      <MainWindow open={open}>
+        <Outlet />
+      </MainWindow>
     </Box>
   );
 }

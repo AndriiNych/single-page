@@ -1,5 +1,5 @@
 import { styled, useTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import { DrawerHeader } from 'components/interface/windows/drawerWindows';
 
 import { WINDOW } from 'components/interface/windows/constants';

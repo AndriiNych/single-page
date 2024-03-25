@@ -10,16 +10,16 @@ export default function DrawerListItems() {
     <>
       {projectsList.map(group => {
         return (
-          <>
+          <div key={group.groupId}>
             <Divider />
             <List>
-              {group.map(item => (
+              {group.items.map(item => (
                 <ListItem key={item.id} disablePadding>
                   <DrawerItem item={item} />
                 </ListItem>
               ))}
             </List>
-          </>
+          </div>
         );
       })}
     </>
