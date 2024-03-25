@@ -1,10 +1,8 @@
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 
+import DrawerItem from './DrawerItem';
 import { projectsList } from 'data';
 
 export default function DrawerListItems() {
@@ -15,12 +13,9 @@ export default function DrawerListItems() {
           <>
             <Divider />
             <List>
-              {group.map((item, index) => (
+              {group.map(item => (
                 <ListItem key={item.id} disablePadding>
-                  <ListItemButton>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.title} />
-                  </ListItemButton>
+                  <DrawerItem item={item} />
                 </ListItem>
               ))}
             </List>

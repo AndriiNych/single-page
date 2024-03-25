@@ -1,6 +1,15 @@
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+
+const drawerHeaderItem = {
+  id: 1,
+  title: 'Home',
+  icon: <HomeIcon />,
+  to: '',
+  component: '',
+};
 
 const projectsList = [
   [
@@ -33,4 +42,4 @@ const projectsList = [
   ],
 ];
 
-export default projectsList;
+export { drawerHeaderItem, projectsList };

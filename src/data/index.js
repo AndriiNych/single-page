@@ -1,3 +1,3 @@
-import projectsList from './projectsList';
+import { drawerHeaderItem, projectsList } from './projectsList';
 
-export { projectsList };
+export { drawerHeaderItem, projectsList };

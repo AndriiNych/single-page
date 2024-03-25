@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBarWindow from './AppBarWindow';
-import DrawerWindow from './DrawerWindow';
+import { DrawerWindow } from 'components/interface/windows/drawerWindows';
 import MainWindow from './MainWindow';
 
 export default function AppGlobalWindow() {
