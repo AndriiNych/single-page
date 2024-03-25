@@ -1,3 +1,7 @@
-import { drawerHeaderItem, projectsList } from './projectsList';
+import {
+  getRoutesFromProjectList,
+  drawerHeaderItem,
+  projectsList,
+} from './projectsList';
 
-export { drawerHeaderItem, projectsList };
+export { getRoutesFromProjectList, drawerHeaderItem, projectsList };

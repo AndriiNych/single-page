@@ -1,12 +1,16 @@
+import { Route } from 'react-router-dom';
+import { Fragment } from 'react';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 // import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 
 import HomePage from 'pages/HomePage';
+import FirstProject from 'pages/FirstProject';
+import SecondProject from 'pages/SecondProject';
 
 const drawerHeaderItem = {
-  id: 1,
+  id: 0,
   title: 'Home',
   icon: <HomeIcon />,
   to: '/',
@@ -22,17 +26,41 @@ const projectsList = [
         title: 'First App',
         icon: <FilterDramaIcon />,
         to: '/first',
-        component: '',
+        component: <FirstProject />,
       },
       {
         id: 2,
         title: 'Second App',
         icon: <InboxIcon />,
         to: '/second',
-        component: '',
+        component: <SecondProject />,
       },
     ],
   },
 ];
 
-export { drawerHeaderItem, projectsList };
+const getRoutesFromProjectList = () => {
+  return (
+    <>
+      <Route index element={<HomePage />} />
+
+      {projectsList.map(group => {
+        return (
+          <Fragment key={group.groupId}>
+            {group.items.map(item => {
+              const component = item.component;
+              // component.props = item.id;
+              return (
+                <Fragment key={item.id}>
+                  <Route path={item.to} element={component} />
+                </Fragment>
+              );
+            })}
+          </Fragment>
+        );
+      })}
+    </>
+  );
+};
+
+export { getRoutesFromProjectList, drawerHeaderItem, projectsList };

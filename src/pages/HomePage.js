@@ -3,6 +3,8 @@
 // import Copyright from 'components/Copyright';
 
 export default function HomePage() {
+  console.log('Home page');
+
   return (
     <>HOme</>
     // <AuthContainer>
