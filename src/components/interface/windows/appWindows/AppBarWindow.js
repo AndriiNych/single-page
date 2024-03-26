@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useLocation } from 'react-router-dom';
 import { styled, useTheme } from '@mui/material/styles';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 
 import { WINDOW } from 'components/interface/windows/constants';
+import { getItemFromProjectListByLocation } from 'data';
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: prop => prop !== 'open',
@@ -27,6 +29,8 @@ const AppBar = styled(MuiAppBar, {
 
 export default function AppBarWindow({ open, handleDrawerOpen }) {
   const theme = useTheme();
+  const location = useLocation();
+  const item = getItemFromProjectListByLocation(location.pathname);
 
   return (
     <AppBar position="fixed" open={open} theme={theme}>
@@ -41,7 +45,7 @@ export default function AppBarWindow({ open, handleDrawerOpen }) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap component="div">
-          Persistent drawer
+          {item.drawerText}
         </Typography>
       </Toolbar>
     </AppBar>
