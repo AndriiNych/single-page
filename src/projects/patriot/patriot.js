@@ -1,66 +1,67 @@
 const htmlText = `
-      <div 
+    <div 
         style="
-            padding: 0px 10px 30px 10px;
+            padding: 0px 10px;
             font-family: Futura, sans-serif;
             font-size: 18px;
             letter-spacing: 0.03em;
             line-height: 1.35;
-            text-align: left;
-            width: 950px;
-            max-width: 100%;
+            max-width: 950px;
             margin: 0 auto;
         "
-        >
+    >
+
         <div
-        style="
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: 0;
+            style="
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 30px;
+                row-gap: 60px;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
             "
         >
-        <div style="width: 450px; text-align: center">
-            <h1
-            style="
-                margin: 30px 0;
-                font-size: 36px;
-                font-family: Futura, sans-serif;
-                letter-spacing: 0.03em;
-                line-height: 1.35;
-                "
-            >
-            STAND WITH UKRAINE
-            </h1>
-            <p
-            style="
-                width: 300px;
-                margin: 0 auto 30px auto;
-                font-family: Futura, sans-serif;
-                font-size: 18px;
-                letter-spacing: 0.03em;
-                line-height: 1.35;
-                "
-            >
-            серія світшотів для підняття патріотичного духу
-            </p>
-            <img
-            src="https://bembi.ua/image/catalog/PatriotSwit/flag.jpg"
-            alt="прапор"
-            style="width: 250px; height: 25px; margin: 0 auto"
-            />
-        </div>
-        <div style="width: 450px">
-            <img
-            src="https://bembi.ua/image/catalog/PatriotSwit/IMG_1396.jpg"
-            style="display: block; max-width: 100%; height: auto; width: 450px"
-            alt="Мама з дитиню в патріотичних футболках"
-            />
-        </div>
-        </div>
+            <div style="width: 450px; text-align: center">
+                <h1
+                    style="
+                        margin: 30px 0;
+                        font-size: 36px;
+                        font-family: Futura, sans-serif;
+                        letter-spacing: 0.03em;
+                        line-height: 1.35;
+                    "
+                >STAND WITH UKRAINE
+                </h1>
+                <p
+                    style="
+                        width: 300px;
+                        margin: 0 auto 30px auto;
+                        font-family: Futura, sans-serif;
+                        font-size: 18px;
+                        letter-spacing: 0.03em;
+                        line-height: 1.35;
+                    "
+                >серія світшотів для підняття патріотичного духу
+                </p>
+                <img
+                    src="https://bembi.ua/image/catalog/PatriotSwit/flag.jpg"
+                    alt="прапор"
+                    style="
+                        width: 250px; height: 25px; margin: 0 auto
+                    "
+                />
+            </div>
+            <div style="width: 450px">
+                <img
+                    src="https://bembi.ua/image/catalog/PatriotSwit/IMG_1396.jpg"
+                    style="display: block; max-width: 100%; height: auto; width: 450px"
+                    alt="Мама з дитиню в патріотичних футболках"
+                />
+            </div>
+        </div> 
+
         <div
         style="
             display: flex;
@@ -147,7 +148,7 @@ const htmlText = `
             />
         </div>
         </div>
-        <div style="padding: 45px 0">
+        <div style="padding: 0 0">
         <img
             src="https://bembi.ua/image/catalog/PatriotSwit/new.png"
             alt="Новинка"
@@ -750,7 +751,9 @@ const htmlText = `
             "
         />
         </section>
-      </div>
+
+
+    </div>
 `;
 
 export default function patriot() {

@@ -27,7 +27,7 @@ export default function MainWindow({ open, children }) {
   const theme = useTheme();
 
   return (
-    <Main open={open} theme={theme}>
+    <Main open={open} theme={theme} className="bg-gray-300">
       <DrawerHeader />
       {children}
     </Main>

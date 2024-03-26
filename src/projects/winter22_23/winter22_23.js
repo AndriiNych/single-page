@@ -8,8 +8,7 @@ const htmlText = `
         font-size: 14px;
         line-height: 18px;
         text-align: center;
-        width: 790px;
-        max-width: 100%;
+        max-width: 790px;
         margin: 0 auto;
       "
     >
@@ -115,7 +114,7 @@ const htmlText = `
       </div>
 
       <div style="margin-bottom: 40px">
-        <h2
+        <h2 
           style="
             font-family: 'Futura PT';
             font-weight: 450;
@@ -477,7 +476,7 @@ const htmlText = `
         <div style="width: 370px">
           <img
             src="https://bembi.ua/image/catalog/article/winter22-23/8t8a1079-2.jpg"
-            alt="динита в комбезі"
+            alt="дитина в комбінезоні"
             style="
               display: block;
               max-width: 370px;

@@ -1,8 +1,9 @@
 const htmlText = `
-    <div style="width: 100%; position: relative">
+    <div style="margin-bottom: 20px; width: 100%; ">
       <img
-        style="width: 100%; position: relative"
+        style="width: 100%; "
         src="https://bembi.ua/image/catalog/Maluv/maluvanky1.jpg"
+        alt="Hero: Limited Etno collection"
       />
     </div>
     <p>
@@ -25,6 +26,7 @@ const htmlText = `
     </p>
     <div
       style="
+        margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -35,6 +37,7 @@ const htmlText = `
         <img
           style="width: 100%"
           src="https://bembi.ua/image/catalog/Maluv/BD 205 (100).png"
+          alt="Боді коник"
         />
         <div
           style="
@@ -69,6 +72,7 @@ const htmlText = `
         <img
           style="width: 100%"
           src="https://bembi.ua/image/catalog/Maluv/FB 942 (100).png"
+          alt="Футболка Пташки"
         />
         <div
           style="
@@ -100,6 +104,7 @@ const htmlText = `
         <img
           style="width: 100%"
           src="https://bembi.ua/image/catalog/Maluv/FB 950 (100).png"
+          alt="Футболка Видива"
         />
         <div
           style="
@@ -131,6 +136,7 @@ const htmlText = `
         <img
           style="width: 100%"
           src="https://bembi.ua/image/catalog/Maluv/PL 377 (100).png"
+          alt="Сукня Сонячна пісня"
         />
         <div
           style="
@@ -162,6 +168,7 @@ const htmlText = `
         <img
           style="width: 100%"
           src="https://bembi.ua/image/catalog/Maluv/FB 942 (110).png"
+          alt="Футболка I am an artist inside"
         />
         <div
           style="
@@ -193,6 +200,7 @@ const htmlText = `
         <img
           style="width: 100%"
           src="https://bembi.ua/image/catalog/Maluv/FB 950 (110).png"
+          alt="Футболка Звір"
         />
         <div
           style="
@@ -221,15 +229,16 @@ const htmlText = `
         </div>
       </div>
     </div>
-    <p>
+    <p style="margin-bottom: 20px;">
       Всі моделі мають зручний крій, виконані з натуральних тканин і можуть
       замінити діткам класичні святкові вишиванки. В колекції представлений одяг
       в розмірній сітці від 62 до 158 см.
     </p>
-    <div style="width: 100%; position: relative">
+    <div style="margin-bottom: 20px; width: 100%; ">
       <img
-        style="width: 100%; position: relative"
+        style="width: 100%"
         src="https://bembi.ua/image/catalog/Maluv/приходько.jpg"
+        alt="Приходько зі своїми іграшками"
       />
     </div>
     <p>
@@ -240,9 +249,10 @@ const htmlText = `
       Художник, який все життя викладав дітям малювання, надзвичайно тонко
       відчуває, як пробудити дитячу емоцію захвату у малюків та у дорослих.
     </p>
-    <p>Він щиро переконаний: "Кожна дитина - художник від народження!".</p>
+    <p style="margin-bottom: 20px;">Він щиро переконаний: "Кожна дитина - художник від народження!".</p>
     <div
       style="
+        margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -254,6 +264,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 20-01.jpg"
+            alt="Сонце, коні, пташки"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -270,6 +281,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 21-01.jpg"
+            alt="Звірі і пташки"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -301,6 +313,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 25-01.jpg"
+            alt="Звір-сонцеграй"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -317,6 +330,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 23-01.jpg"
+            alt="Риби навколо сонця"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -333,6 +347,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 24-01.jpg"
+            alt="Пташки на квітах"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -349,6 +364,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 22-01.jpg"
+            alt="Кінь над яким летять пташки і янгол"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -365,6 +381,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 26-01.jpg"
+            alt="Козаки стоять на конях"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
@@ -382,6 +399,7 @@ const htmlText = `
           <img
             style="width: 100%"
             src="https://bembi.ua/image/catalog/Maluv/Asset 27-01.jpg"
+            alt="Звір і риба"
           />
         </div>
         <div style="display: flex; flex-wrap: wrap; align-content: center">
