@@ -1,7 +1,9 @@
+import Typography from '@mui/material/Typography';
+
 export default function Page404() {
   return (
     <>
-      <div>Page not fount</div>
+      <Typography variant="h5">Page not fount</Typography>
     </>
   );
 }
