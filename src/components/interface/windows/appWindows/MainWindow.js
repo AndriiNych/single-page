@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import { DrawerHeader } from 'components/interface/windows/drawerWindows';
 
@@ -24,6 +25,7 @@ const Main = styled('main', { shouldForwardProp: prop => prop !== 'open' })(
 
 export default function MainWindow({ open, children }) {
   const theme = useTheme();
+  console.log(theme);
 
   return (
     <Main open={open} theme={theme}>

@@ -6,9 +6,11 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 import { WINDOW } from 'components/interface/windows/constants';
 import { getItemFromProjectListByLocation } from 'data';
+import { SwitchMode } from 'components/interface/components/SwitchMode';
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: prop => prop !== 'open',
@@ -27,7 +29,11 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-export default function AppBarWindow({ open, handleDrawerOpen }) {
+export default function AppBarWindow({
+  open,
+  handleDrawerOpen,
+  handleChangeTheme,
+}) {
   const theme = useTheme();
   const location = useLocation();
   const item = getItemFromProjectListByLocation(location.pathname);
@@ -44,9 +50,14 @@ export default function AppBarWindow({ open, handleDrawerOpen }) {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap component="div">
-          {item.drawerText}
-        </Typography>
+        <Box className="flex justify-between items-center w-full">
+          <Typography variant="h6" noWrap component="div">
+            {item.drawerText}
+          </Typography>
+          <IconButton>
+            <SwitchMode size="small" handleChangeTheme={handleChangeTheme} />
+          </IconButton>
+        </Box>
       </Toolbar>
     </AppBar>
   );

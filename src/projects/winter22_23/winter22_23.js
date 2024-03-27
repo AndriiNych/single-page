@@ -62,7 +62,7 @@ const htmlText = `
               font-size: 14px;
               line-height: 18px;
               text-align: center;
-              color: #000000;
+              
             "
           >
             Зустрічайте нову колекцію зимового верхнього одягу від BEMBI сезону
@@ -81,7 +81,6 @@ const htmlText = `
               font-size: 14px;
               line-height: 18px;
               text-align: center;
-              color: #000000;
             "
           >
             Зима - час для веселощів і рухливих ігор на вулиці! Правильно
@@ -121,7 +120,6 @@ const htmlText = `
             font-size: 16px;
             line-height: 21px;
             margin: 0 0;
-            color: #000000;
           "
         >
           Важливі для батьків критерії, яких ми дотримуємось при створенні
@@ -171,7 +169,6 @@ const htmlText = `
                   text-align: left;
                   margin-top: 0;
                   margin-bottom: 25px;
-                  color: #000000;
                 "
               >
                 Для пошиття виробів використовуються матеріали, які пройшли
@@ -205,7 +202,6 @@ const htmlText = `
                   margin-bottom: 25px;
                   max-width: 370px;
                   width: 90%;
-                  color: #000000;
                 "
               >
                 Сучасні наповнювачі та технологічні тканини забезпечують курткам
@@ -239,7 +235,6 @@ const htmlText = `
                   margin-bottom: 40px;
                   max-width: 370px;
                   width: 90%;
-                  color: #000000;
                 "
               >
                 Всі куртки та комбінезони виготовлені з довговічних
@@ -290,7 +285,6 @@ const htmlText = `
                   margin-bottom: 25px;
                   max-width: 370px;
                   width: 90%;
-                  color: #000000;
                 "
               >
                 Вивірений крій, рівні рядки та міцні нитки, відсутність швів, що
@@ -322,7 +316,6 @@ const htmlText = `
                   margin-bottom: 25px;
                   max-width: 370px;
                   width: 90%;
-                  color: #000000;
                 "
               >
                 Фасони, підібрані дизайнерами, роблять верхній одяг Bembi одяг
@@ -358,7 +351,6 @@ const htmlText = `
                   margin-bottom: 25px;
                   max-width: 370px;
                   width: 90%;
-                  color: #000000;
                 "
               >
                 Створюючи колекції верхнього одягу, дизайнери орієнтуються на
@@ -396,7 +388,6 @@ const htmlText = `
             line-height: 18px;
             text-align: center;
             margin: 0 auto;
-            color: #000000;
           "
         >
           В новій колекції також представлені моделі з мембранної тканини.
@@ -492,7 +483,6 @@ const htmlText = `
               line-height: 18px;
               text-align: center;
               margin: 0 auto;
-              color: #000000;
             "
           >
             Найзручніший верхній одяг для дітей до 1 року - це цільні
@@ -523,7 +513,6 @@ const htmlText = `
               line-height: 18px;
               text-align: center;
               margin: 0 auto;
-              color: #000000;
             "
           >
             Для найменших діток, що вже ходять - ефектні комплекти з
@@ -558,7 +547,6 @@ const htmlText = `
           />
           <p
             style="
-              color: #000000;
               font-family: 'Futura PT';
               font-weight: 450;
               font-size: 14px;
@@ -578,7 +566,6 @@ const htmlText = `
               text-align: center;
               margin: 0 auto;
 
-              color: #000000;
             "
           >
             Досконально знаємо потреби клієнтів і Світові тренди
@@ -599,13 +586,11 @@ const htmlText = `
           />
           <p
             style="
-              color: #000000;
               font-family: 'Futura PT';
               font-weight: 450;
               font-size: 14px;
               line-height: 18px;
               text-align: center;
-
               margin: 0 auto 10px;
             "
           >
@@ -619,8 +604,6 @@ const htmlText = `
               line-height: 18px;
               text-align: center;
               margin: 0 auto;
-
-              color: #000000;
             "
           >
             Від народження до підліткового віку
@@ -641,7 +624,6 @@ const htmlText = `
           />
           <p
             style="
-              color: #000000;
               font-family: 'Futura PT';
               font-weight: 450;
               font-size: 14px;
@@ -660,8 +642,6 @@ const htmlText = `
               line-height: 18px;
               text-align: center;
               margin: 0 auto;
-
-              color: #000000;
             "
           >
             Гарантія якості постачальників, перевірених часом
@@ -682,13 +662,11 @@ const htmlText = `
           />
           <p
             style="
-              color: #000000;
               font-family: 'Futura PT';
               font-weight: 450;
               font-size: 14px;
               line-height: 18px;
               text-align: center;
-
               margin: 0 auto 10px;
             "
           >
@@ -702,8 +680,6 @@ const htmlText = `
               line-height: 18px;
               text-align: center;
               margin: 0 auto;
-
-              color: #000000;
             "
           >
             Пишаємось якістю речей українського виробництва
@@ -719,7 +695,6 @@ const htmlText = `
             font-size: 16px;
             line-height: 21px;
             margin: 0 0;
-            color: #000000;
           "
         >
           У кожну річ ми вклали свою любов, бо хочемо, щоб фраза «Made in
