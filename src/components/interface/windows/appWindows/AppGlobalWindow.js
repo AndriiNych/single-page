@@ -18,7 +18,7 @@ export default function AppGlobalWindow() {
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }} className="min-h-screen bg-gray-200 ">
       <CssBaseline />
       <AppBarWindow open={open} handleDrawerOpen={handleDrawerOpen} />
       <DrawerWindow open={open} handleDrawerClose={handleDrawerClose} />

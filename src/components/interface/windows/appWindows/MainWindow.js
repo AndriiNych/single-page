@@ -1,5 +1,4 @@
 import { styled, useTheme } from '@mui/material/styles';
-// import Typography from '@mui/material/Typography';
 import { DrawerHeader } from 'components/interface/windows/drawerWindows';
 
 import { WINDOW } from 'components/interface/windows/constants';
@@ -27,7 +26,7 @@ export default function MainWindow({ open, children }) {
   const theme = useTheme();
 
   return (
-    <Main open={open} theme={theme} className="bg-gray-300">
+    <Main open={open} theme={theme}>
       <DrawerHeader />
       {children}
     </Main>

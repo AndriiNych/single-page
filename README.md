@@ -14,11 +14,11 @@ Several projects of HTML blocks
 
 **Customer requirements:**
 
-- CSS - use only inline styles
-- Adaptability - minimal
+- CSS - use only inline styles.
+- Adaptability - minimal.
 - Semantic layout - not required.
-- Compliance with the design provided by the customer
+- Compliance with the design provided by the customer.
 - According to the design, some information blocks for mobile versions should be
-  hidden (Winter 22/23)
+  hidden (Winter 22/23).
 
 **Note:** The Winter 22/23 project was carried out as part of a team.

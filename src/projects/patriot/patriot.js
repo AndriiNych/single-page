@@ -738,7 +738,7 @@ const htmlText = `
             </div>
         </div>
         </div>
-        <section style="padding: 0 0">
+        <div style="padding: 0 0">
         <img
             src="https://bembi.ua/image/catalog/PatriotSwit/IMG_1729.jpg"
             alt="Мама з дитиною у світшоті Тризуб"
@@ -750,7 +750,7 @@ const htmlText = `
                 margin: 0 auto;
             "
         />
-        </section>
+        </div>
 
 
     </div>
