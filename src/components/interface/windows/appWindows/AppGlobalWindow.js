@@ -9,15 +9,36 @@ import AppBarWindow from './AppBarWindow';
 import { DrawerWindow } from 'components/interface/windows/drawerWindows';
 import MainWindow from './MainWindow';
 
+const currentTheme = mode =>
+  createTheme({
+    palette: {
+      mode: mode,
+    },
+  });
+
+const currentMode = isChecked => (isChecked ? 'dark' : 'light');
+
+const THEME_MODE_NAME = 'themeMode';
+
+const getThemeModeFromLocalStorageAsChecked = () => {
+  const mode = localStorage.getItem(THEME_MODE_NAME) || '';
+  return mode === 'dark' ? true : false;
+};
+
+const setThemeModeToLocalStorage = mode => {
+  localStorage.setItem(THEME_MODE_NAME, mode);
+};
+
 export default function AppGlobalWindow() {
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState(
-    createTheme({
-      palette: {
-        mode: 'light',
-      },
-    })
+  const [isChecked, setIsChecked] = useState(
+    getThemeModeFromLocalStorageAsChecked()
   );
+  const [theme, setTheme] = useState(currentTheme(currentMode(isChecked)));
+
+  React.useEffect(() => {
+    setTheme(currentTheme(currentMode(isChecked)));
+  }, [isChecked]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -27,16 +48,9 @@ export default function AppGlobalWindow() {
     setOpen(false);
   };
 
-  const handleChangeTheme = mode => {
-    console.log(mode);
-
-    setTheme(
-      createTheme({
-        palette: {
-          mode: mode,
-        },
-      })
-    );
+  const handleChangeTheme = isChecked => {
+    setThemeModeToLocalStorage(currentMode(isChecked));
+    setIsChecked(isChecked);
   };
 
   return (
@@ -46,6 +60,7 @@ export default function AppGlobalWindow() {
         <AppBarWindow
           open={open}
           handleDrawerOpen={handleDrawerOpen}
+          isChecked={isChecked}
           handleChangeTheme={handleChangeTheme}
         />
         <DrawerWindow open={open} handleDrawerClose={handleDrawerClose} />

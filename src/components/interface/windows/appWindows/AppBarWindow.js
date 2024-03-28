@@ -32,6 +32,7 @@ const AppBar = styled(MuiAppBar, {
 export default function AppBarWindow({
   open,
   handleDrawerOpen,
+  isChecked,
   handleChangeTheme,
 }) {
   const theme = useTheme();
@@ -55,7 +56,11 @@ export default function AppBarWindow({
             {item.drawerText}
           </Typography>
           <IconButton>
-            <SwitchMode size="small" handleChangeTheme={handleChangeTheme} />
+            <SwitchMode
+              size="small"
+              isChecked={isChecked}
+              handleChangeTheme={handleChangeTheme}
+            />
           </IconButton>
         </Box>
       </Toolbar>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 
@@ -49,17 +49,10 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-export default function SwitchMode({ handleChangeTheme }) {
-  const [themeMode, setThemeMode] = useState(true);
-
-  useEffect(() => {
-    handleChangeTheme(themeMode ? 'dark' : 'light');
-  }, [themeMode]);
-
+export default function SwitchMode({ isChecked, handleChangeTheme }) {
   const handleClick = event => {
-    setThemeMode(event.target.checked);
-    console.log(event.target.checked);
+    handleChangeTheme(event.target.checked);
   };
 
-  return <MaterialUISwitch checked={themeMode} onClick={handleClick} />;
+  return <MaterialUISwitch checked={isChecked} onClick={handleClick} />;
 }
