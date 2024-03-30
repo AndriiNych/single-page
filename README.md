@@ -21,4 +21,6 @@ Several projects of HTML blocks
 - According to the design, some information blocks for mobile versions should be
   hidden (Winter 22/23).
 
-**Note:** The Winter 22/23 project was carried out as part of a team.
+**_Note:_** _The Winter 22/23 project was carried out as part of a team._
+
+**_Interface:_** _Built with React, Material UI, Tailwind_
